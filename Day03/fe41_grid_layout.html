@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #wrap{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);/*fr(배율)*/
+            grid-template-rows: 1fr 2fr;
+            /* grid-gap: 20px; --property is obsolete 사용X 없어질 것 */
+            row-gap: 10px;
+            column-gap: 20px;
+            /* grid-template-rows: 100px 100px; */
+        }
+        .item{
+            padding: 10px;
+            background-color: #eeeeee;
+        }
+        .item:nth-child(2n+1){
+            background-color: #bbbbbb;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis neque alias in, impedit
+            voluptates quam tempora, a, earum animi quo sunt consequatur maiores perferendis nisi necessitatibus
+            accusamus aliquam nostrum officia!</div>
+    </div>
+</body>
+
+</html>
