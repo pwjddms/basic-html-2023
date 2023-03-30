@@ -68,10 +68,10 @@ Java 개발자 과정 프론트엔드 리포지토리
         -Bootstrap
 
 7일차 핀터레스트 스타일 클로닝
-<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portpolio1.png" width="700">
+<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio1.png" width="700">
 
 Parallax Scrolling Web
-<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portpolio2.png" width="700">
+<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio2.png" width="700">
 
 ## 8일차
 - 프론트엔드 학습
@@ -79,4 +79,4 @@ Parallax Scrolling Web
     - SB Admin Page
 
 Grayscale Single Page Template
-<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portpolio3.gif" width="700">
+<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio3.gif" width="700">
