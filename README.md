@@ -78,4 +78,5 @@ Parallax Scrolling Web
     - Single Page Template
     - SB Admin Page
 
-
+Grayscale Single Page Template
+<img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portpolio3.gif" width="700">
