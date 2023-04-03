@@ -68,9 +68,11 @@ Java 개발자 과정 프론트엔드 리포지토리
         -Bootstrap
 
 7일차 핀터레스트 스타일 클로닝
+
 <img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio1.png" width="700">
 
 Parallax Scrolling Web
+
 <img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio2.png" width="700">
 
 ## 8일차
@@ -79,6 +81,7 @@ Parallax Scrolling Web
     - SB Admin Page
 
 Grayscale Single Page Template
+
 <img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio3.gif" width="700">
 
 ## 9일차
@@ -88,6 +91,7 @@ Grayscale Single Page Template
         - Chart.js
 
 SB Admin Page 중간단계
+
 <img src="https://raw.githubusercontent.com/pwjddms/basic-html-2023/main/img/portfolio4_middle.png" width="700">
 
 ## 10일차
@@ -101,8 +105,6 @@ SB Admin Page 마무리
 
 ## 11일차
 - 프론트엔드 실습
-    - 
     
 ## 12일차
 - 프론트엔드 실습
-    - 
