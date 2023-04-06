@@ -1,0 +1,275 @@
+ @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    margin: 0; /*마진값 초기화*/
+    padding: 0; /*패딩값 초기화*/
+    box-sizing: border-box;/*박스 영역은 테두리까지 지정*/
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+#container{
+    margin: 0 auto; /*화면 중앙 배치*/
+    width: 1200px; /* 너비 지정*/
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #07c;
+}
+
+#logo{
+    float: left; /*왼쪽으로 플로팅*/
+    width: 250px;
+    height: 100px;
+    line-height: 100px;/*height값과 같게 만들어서 세로로 중간에 오도록 맞춤*/
+    padding-left: 20px;/*왼쪽 패딩 지정*/
+}
+#logo h1{
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;/*그림자색*/
+}
+nav{
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+}
+#topMenu{
+    height: 60px;
+}
+#topMenu > li{
+    float: left;
+    position: relative;
+}
+#topMenu >li >a{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+#topMenu > li> a> span{
+    font-size: 0.5em;
+}
+#topMenu >li >a:hover{
+    color: #000;
+    text-shadow: 0 -1px #07c;
+}
+#topMenu >li >ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255,255,255,0.6);
+    left: 0;
+    margin: 0;
+    left: 20px;
+}
+#topMenu >li >ul >li{
+    padding: 10px 10px 10px 30px;
+}
+#topMenu >li >ul >li >a{
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#topMenu >li:hover >ul{
+    display: block;
+    z-index: 10;
+}
+#topMenu >li >ul > li >a:hover{
+    color: #f00;
+}
+#slideShow{
+    clear: both;/*플로팅 해제*/
+    width: 100%;
+    height: 300px;
+    overflow: hidden;/*영역넘치면 감춤*/
+    position: relative;
+}
+#slides{
+    position: absolute;
+}
+#slides >img{
+    width: 100%;
+    float: left;
+}
+#contents{
+    width: 100%;
+    height: 300px;
+}
+
+#tabMenu{
+    float: left;
+    width: 600px;
+    height: 100%;
+    margin-top: 10px;
+}
+#tabMenu input[type="radio"]{ /*라디오버튼 감춤*/
+    display: none;
+}
+#tabMenu label{
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;/*텍스트 중앙정렬*/
+    color: #aaa;
+    border: 1px solid transparent;
+}
+#tabMenu label:hover{ /*마우스 포인터를 올렸을 때 탭 제목 스타일*/
+    color:#222;
+    cursor: pointer;
+}
+#tabMenu input:checked + label{/*활성화된 탭 제목 스타일*/
+    /*checked
+    boolean속성이다.
+    페이지가 로드될 때 미리 선택될 <input> 요소를 명시
+    이 속성은 input요소의 속성값이 checkbox 또는 radio인 경우에만 사용 */
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+.tabContent{
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+.tabContent h2{
+    display: none;
+}
+#notice ul{
+    list-style: disc;
+    margin-left: 30px;
+}
+#notice ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+#gallery ul li{
+    display: inline; 
+    /* display 
+    display:none
+    display:block => div의 기본값(width가 컨테이너의 100% ==> 가로한줄을 다 차지한다)
+    display:inline  => 컨텐츠를 딱 감쌀 정도의 크기만 갖는다.
+    display:inline-block => inline+block 인라인 요소안에서 내부에서는 블록요소로 동작
+    */
+}
+#tab1:checked ~ #notice, 
+#tab2:checked ~ #gallery { /*tab1이 checked상태일 때 첫번째 탭 내용인 #notice를 보여준다.*/
+  display:block;
+}
+
+#links{
+    float: right; /*
+    float 
+    : 띄워서 정렬/ 내용만큼의 공간만 차지/특정요소를 떠있도록 부유하도록 하는 속성/문서의 흐름과 관계없이 화면 배치를 유연하게
+    다른요소의 배치에 영향을 안줌(무시)
+    clear로 float해제
+    float은 position속성의 absolute값과 양립할 수 없다.
+    left-왼쪽에 띄움
+    right-오른쪽에 띄움
+    initial-기본값으로 설정함
+    inherit-부모 요소로부터 상속함*/
+    width: 600px;
+    height: 100%;
+}
+#links ul{
+    padding: 0;
+    overflow: hidden;/*넘치는 항목 감춤
+    auto 의 경우 컨테이너 요소의 크기가 자동으로 내부의 요소를 감쌀 수 있을만큼 커지게된다.*/
+}
+#links ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+#links ul li a span{
+    display: block;
+    margin: 0 auto; /*가운데 배치*/
+    /*0 auto의 경우 위 0 오른쪽 auto 아래 0 왼쪽 auto*/
+    /*margin 위오른쪽아래왼쪽 간격 /0은 여백주지않음/ auto는 위아래여백없이 가로중앙*/
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;/*모서리 둥글게*/
+    border: 1px solid #ddd;
+    line-height: 150px; /*줄간격 글자윗줄밑줄간 거리*/
+}
+#quick-icon1{
+    background-image: url('../images/icon-1.jpg');
+}
+#quick-icon2{
+    background-image: url('../images/icon-2.jpg');
+}
+#quick-icon3{
+    background-image: url('../images/icon-3.jpg');
+}
+#linkds ul li a p{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
+#contents{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+#links{
+    float: right;
+    width: 600px;
+    height: 100%;
+    margin-top: 15px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #222;/*위쪽에 가로선 추가*/
+}
+#bottomMenu{
+    width: 100%;
+    height: 20px;
+}
+#bottomMenu ul{
+    margin-top: 15px;
+}
+#bottomMenu ul li{
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+    border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+    font-size: 15px;
+    color: #666;
+}
+#bottomMenu{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+#sns{
+    position: absolute;
+    right: 0;
+}
+#sns ul li{
+    border: none;
+    padding: 5px;
+}
+#company{
+    clear: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+p{
+    font-size: 14px;
+    color: #aaa;
+}
